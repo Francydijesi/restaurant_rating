@@ -29,10 +29,10 @@ def rate_restaurant ():
     answer = raw_input("Input the new rating or quit:")
 
     while answer != 'q':
-      restaurant_ratings[random_res] = int(answer)
-      random_res = random.choice(restaurant_ratings.keys())
-      print "{} : {}".format(random_res, restaurant_ratings[random_res] )
-      answer = raw_input("Input the new rating or quit:")
+        restaurant_ratings[random_res] = int(answer)
+        random_res = random.choice(restaurant_ratings.keys())
+        print "{} : {}".format(random_res, restaurant_ratings[random_res] )
+        answer = raw_input("Input the new rating or quit:")
 
     # Outputting a list of alphabatized keys from restaurant_ratings dictionary.
     for res_name, res_rating in sorted(restaurant_ratings.items()):
