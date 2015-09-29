@@ -40,3 +40,6 @@ def rate_restaurant ():
 
 
 rate_restaurant()
+
+
+
